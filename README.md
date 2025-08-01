@@ -1,4 +1,4 @@
-# 🪙 TourPay Wallet
+# TourPay Wallet
 
 **"ادفع بسهولة .. كأنك ابن البلد"**  
 TourPay is a digital wallet built for **tourists visiting Saudi Arabia**. It allows them to load money using **international credit cards** and pay at local stores that accept **Mada-only payments**, by issuing a simulated Mada digital card.
@@ -63,7 +63,7 @@ php artisan migrate --seed
 php artisan serve
 ```
 --- 
-🪙 Default Seeded Data
+# Default Seeded Data
 Entity	Description
 Currencies	Common currencies like USD, EUR, INR with conversion rates
 No users	Register as a tourist to test

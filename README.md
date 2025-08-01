@@ -42,3 +42,63 @@ cd tourpay
 composer install
 npm install && npm run build
 ```
+3. **Set up environment:**
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. **Configure .env file:**
+- Set DB credentials
+    Configure mail and storage if needed
+    Run migrations and seeders:
+
+```bash
+php artisan migrate --seed
+```
+5. **Serve the app locally:**
+
+```bash
+php artisan serve
+```
+--- 
+🪙 Default Seeded Data
+Entity	Description
+Currencies	Common currencies like USD, EUR, INR with conversion rates
+No users	Register as a tourist to test
+
+📁 Key Directories
+app/Models: Models like User, Wallet, Currency, MadaCard
+
+resources/views: Blade views (mobile-first layout)
+
+routes/web.php: All routes
+
+database/migrations: Schema definitions
+
+database/seeders: Currency seeder, etc.
+
+💡 Notes
+All logic is simulated (no real payments or card integrations yet).
+
+Mada Card and NFC payment are mock features.
+
+UI design is mobile-first but web-rendered.
+
+✅ TODOs (Next Phases)
+Admin dashboard
+
+Partner offers (Hotels, taxis, restaurants)
+
+Dynamic fee handling logic
+
+Full Mada integration (real or via API)
+
+Real NFC payment support
+
+🤝 Contributing
+PRs welcome. Please fork and submit with a clear description.
+
+📄 License
+MIT — free to use and modify.

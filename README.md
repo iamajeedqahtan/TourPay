@@ -1,6 +1,5 @@
 # TourPay Wallet
 
-**"ادفع بسهولة .. كأنك ابن البلد"**  
 TourPay is a digital wallet built for **tourists visiting Saudi Arabia**. It allows them to load money using **international credit cards** and pay at local stores that accept **Mada-only payments**, by issuing a simulated Mada digital card.
 
 ---
@@ -64,41 +63,30 @@ php artisan serve
 ```
 --- 
 # Default Seeded Data
-Entity	Description
-Currencies	Common currencies like USD, EUR, INR with conversion rates
-No users	Register as a tourist to test
+| Entity     | Description                                               |
+|------------|-----------------------------------------------------------|
+| Currencies | Common currencies like USD, EUR, INR with conversion rates|
+| No users   | Register as a tourist to test                             |
 
-📁 Key Directories
-app/Models: Models like User, Wallet, Currency, MadaCard
+---
 
-resources/views: Blade views (mobile-first layout)
+# 📁 Key Directories
 
-routes/web.php: All routes
+- app/Models: Models like User, Wallet, Currency, MadaCard
+- resources/views: Blade views (mobile-first layout)
+- routes/web.php: All routes
+- database/migrations: Schema definitions
+- database/seeders: Currency seeder, etc.
 
-database/migrations: Schema definitions
+---
 
-database/seeders: Currency seeder, etc.
+# 💡 Notes
 
-💡 Notes
-All logic is simulated (no real payments or card integrations yet).
+- All logic is simulated (no real payments or card integrations yet).
+- Mada Card and NFC payment are mock features.
+- UI design is mobile-first but web-rendered.
 
-Mada Card and NFC payment are mock features.
+---
 
-UI design is mobile-first but web-rendered.
-
-✅ TODOs (Next Phases)
-Admin dashboard
-
-Partner offers (Hotels, taxis, restaurants)
-
-Dynamic fee handling logic
-
-Full Mada integration (real or via API)
-
-Real NFC payment support
-
-🤝 Contributing
-PRs welcome. Please fork and submit with a clear description.
-
-📄 License
-MIT — free to use and modify.
+# 📄 License
+Copyright © Cloud Team, participants in "أمد هاكثون" under the supervision of Tuwaiq Academy and Alinma Bank.

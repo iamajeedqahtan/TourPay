@@ -50,9 +50,9 @@ php artisan key:generate
 ```
 
 4. **Configure .env file:**
-- Set DB credentials
-    Configure mail and storage if needed
-    Run migrations and seeders:
+* Set DB credentials
+    * Configure mail and storage if needed
+    * Run migrations and seeders:
 
 ```bash
 php artisan migrate --seed

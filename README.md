@@ -1,6 +1,3 @@
-from pathlib import Path
-
-readme_content = """
 # 🪙 TourPay Wallet
 
 **"ادفع بسهولة .. كأنك ابن البلد"**  
@@ -38,3 +35,10 @@ TourPay is a digital wallet built for **tourists visiting Saudi Arabia**. It all
 ```bash
 git clone https://github.com/your-username/tourpay.git
 cd tourpay
+```
+
+2. **Install dependencies:**
+```bash
+composer install
+npm install && npm run build
+```
